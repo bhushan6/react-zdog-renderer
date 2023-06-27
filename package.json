@@ -1,0 +1,14 @@
+{
+  "name": "lib-example",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "package/*",
+      "examples/*"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "2.5.1",
+    "pretty-quick": "3.1.3"
+  }
+}

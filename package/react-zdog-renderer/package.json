@@ -1,0 +1,46 @@
+{
+  "name": "react-zdog-renderer",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+  },
+  "dependencies": {
+    "react-reconciler": "^0.29.0",
+    "react-use-measure": "^2.1.1",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "json": "^11.0.0",
+    "vite": "^4.3.9"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "zdog": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-zdog-renderer.umd.js",
+  "module": "./dist/react-zdog-renderer.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-zdog-renderer.es.js",
+      "require": "./dist/react-zdog-renderer.umd.js"
+    }
+  }
+}
