@@ -2,6 +2,19 @@
   "name": "react-zdog-renderer",
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "react",
+    "renderer",
+    "zdog",
+    "svg",
+    "canvas",
+    "3d"
+  ],
+  "author": "Bhushan Wagh (https://github.com/bhushan6)",
+  "bugs": {
+    "url": "https://github.com/bhushan6/react-zdog-renderer/issues"
+  },
+  "homepage": "https://github.com/bhushan6/react-zdog-renderer#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
