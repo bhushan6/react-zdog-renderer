@@ -30,8 +30,8 @@ export const Heading = () => {
         React{" "}
         <div
           style={{
-            width: "9.5vw",
-            height: "9.5vw",
+            width: "10.5vw",
+            height: "10.5vw",
             display: "inline-block",
             position: "relative",
             bottom: "-30px",
@@ -53,12 +53,15 @@ export const Heading = () => {
         declaratively
       </p>
       <div style={{ display: "flex", gap: "4px", padding: "20px 0" }}>
-        <Label text={"Github"} link="https://github.com/bhushan6" />
-        <Label text={"Twitter"} link="https://twitter.com/Bhushanwtf" />
+        <Label
+          text={"Github"}
+          link="https://github.com/bhushan6/react-zdog-renderer"
+        />
         <Label
           text={"Package"}
           link="https://www.npmjs.com/package/react-zdog-renderer"
         />
+        <Label text={"Twitter"} link="https://twitter.com/Bhushanwtf" />
       </div>
     </div>
   );

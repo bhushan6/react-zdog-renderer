@@ -139,21 +139,13 @@ const ear = {
 };
 
 export const ZdogLogo = ({ background }) => {
-  const hover = useRef(false);
-
   return (
     <>
       <Canvas
-        onPointerEnter={(e) => {
-          hover.current = true;
-        }}
-        onPointerLeave={(e) => {
-          hover.current = false;
-        }}
         element={"svg"}
         background={"transparent"}
         dragRotate={true}
-        zoom={2.6}
+        zoom={2}
         style={{
           height: "100%",
         }}

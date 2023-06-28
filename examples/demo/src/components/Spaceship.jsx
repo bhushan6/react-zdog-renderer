@@ -249,9 +249,15 @@ const Spaceship = () => {
     ship.current.rotate.y += 0.003;
   });
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      ship.current.translate.x = window.innerWidth / 7;
+    });
+  }, []);
+
   return (
     <>
-      <anchor ref={ship} translate={{ x: 300, y: 50 }}>
+      <anchor ref={ship} translate={{ x: window.innerWidth / 7, y: 50 }}>
         <cylinder {...main}>
           <shape {...fin} />
           <ellipse {...screen} />
