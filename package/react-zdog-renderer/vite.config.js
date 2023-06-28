@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
       name: "react-zdog-renderer",
-      formats: ["es"],
+      formats: ["es", "umd"],
       fileName: (format) => `react-zdog-renderer.${format}.js`,
     },
     rollupOptions: {
