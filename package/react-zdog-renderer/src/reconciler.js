@@ -14,13 +14,19 @@ export const reconciler = ReactReconciler({
         `Please use valid zdog Element, looks like ${type} doesn't exist in zdog`
       );
     }
-    const { dragRotate, ...rest } = getInstanceProps(props);
+    const { dragRotate, addTo, ...rest } = getInstanceProps(props);
     let ele = new Zdog[zdogEleType]({
       ...rest,
     });
 
     if (dragRotate) {
       rootContainerInstance.dragRotate = ele;
+    }
+
+    if (addTo) {
+      console.warn(
+        `"addTo" prop found on component, you don't really need to use addTo prop to add component as child, just nest the component within the parent and react will add it as child for you.`
+      );
     }
 
     return ele;
@@ -80,7 +86,9 @@ export const reconciler = ReactReconciler({
 
   finalizeInitialChildren() {},
   getChildHostContext() {},
-  getPublicInstance() {},
+  getPublicInstance(instance) {
+    return instance;
+  },
   prepareForCommit() {},
   resetAfterCommit() {},
   shouldSetTextContent() {

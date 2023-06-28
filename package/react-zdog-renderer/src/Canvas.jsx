@@ -14,6 +14,7 @@ export const Canvas = ({
   resize,
   dragRotate,
   rotate,
+  background,
   zoom = 1,
   centered = true,
   element = "canvas",
@@ -65,7 +66,6 @@ export const Canvas = ({
 
   return (
     <>
-      <h1>{element}</h1>
       <div
         {...props}
         ref={divRef}
@@ -80,8 +80,9 @@ export const Canvas = ({
         <Element
           ref={canvasRef}
           style={{
-            display: "blocck",
+            display: "block",
             boxSizing: "border-box",
+            background: background ? background : "#fff",
           }}
           {...sizeProp}
         />
