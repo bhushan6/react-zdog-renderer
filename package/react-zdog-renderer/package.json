@@ -1,6 +1,6 @@
 {
   "name": "react-zdog-renderer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "keywords": [
     "react",
@@ -38,12 +38,5 @@
       "import": "./dist/react-zdog-renderer.es.js",
       "require": "./dist/react-zdog-renderer.umd.js"
     }
-  },
-  "dependencies": {
-    "@react-spring/three": "^9.7.3",
-    "@react-spring/zdog": "^9.7.3",
-    "react-reconciler": "^0.29.0",
-    "react-use-measure": "^2.1.1",
-    "zustand": "^4.3.8"
   }
 }
