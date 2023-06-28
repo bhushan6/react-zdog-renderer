@@ -1,6 +1,6 @@
 {
   "name": "react-zdog-renderer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "keywords": [
     "react",
@@ -31,12 +31,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/react-zdog-renderer.umd.js",
   "module": "./dist/react-zdog-renderer.es.js",
   "exports": {
     ".": {
-      "import": "./dist/react-zdog-renderer.es.js",
-      "require": "./dist/react-zdog-renderer.umd.js"
+      "import": "./dist/react-zdog-renderer.es.js"
     }
   }
 }
