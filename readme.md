@@ -4,7 +4,7 @@
 
 ![npm](https://img.shields.io/npm/v/react-zdog-renderer.svg?style=flat-square) ![npm](https://img.shields.io/npm/dt/react-zdog-renderer.svg?style=flat-square)
 
-react-zdog-renderer is a react renderer for [zdog](https://zzz.dog/) library, Everything that works in vanialla zdog library it should work in react-zdog-renderer, it is binded to specific version of zdog, so even something new added into zdog lib should work out of the box here, unless changes are done API syntax. Try a live demo [here](https://stackblitz.com/edit/react-lwydjw?file=src%2FApp.js).
+react-zdog-renderer is a react renderer for [zdog](https://zzz.dog/) library, Everything that works in vanialla zdog library it should work in react-zdog-renderer, it is not binded to specific version of zdog, so even something new added into zdog lib should work out of the box here, unless changes are done API syntax. Try a live demo [here](https://stackblitz.com/edit/react-lwydjw?file=src%2FApp.js).
 
 **Note:**
 There is another library as solution to same problem this library trying to solve, [react-zdog](https://github.com/pmndrs/react-zdog) and I'd recommed checking that out before, just in case you stumbled upon this library before that one (which I doubt). It is light in weight that this library. Only issue is, it is not maintained and I found a bug in it when used react 18 which makes it unusable react 18. though you can still try it, just in case it worked for you.
